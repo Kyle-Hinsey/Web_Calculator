@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="dis-title">
+        <h1>Case Study - Calculator</h1>
+        <input type="text" id="calc-display" name="calc-display" value="" readonly>
+      </div>
+
+      <div class="row" id="row-1">
+        <button type="button"> </button>
+        <button type="button" onclick="on_num_click('7')">7</button>
+        <button type="button" onclick="on_num_click('4')">4</button>
+        <button type="button" onclick="on_num_click('1')">1</button>
+        <button type="button"> </button>
+      </div>
+
+      <div class="row" id="row-2">
+        <button type="button" onclick="square_func()">x^2</button>
+        <button type="button" onclick="on_num_click('8')">8</button>
+        <button type="button" onclick="on_num_click('5')">5</button>
+        <button type="button" onclick="on_num_click('2')">2</button>
+        <button type="button" onclick="on_num_click('0')">0</button>
+      </div>
+
+      <div class="row" id="row-3">
+        <button type="button" onclick="random_func()">Rand</button>
+        <button type="button" onclick="on_num_click('9')">9</button>
+        <button type="button" onclick="on_num_click('6')">6</button>
+        <button type="button" onclick="on_num_click('3')">3</button>
+        <button type="button" onclick="solve()">=</button>
+      </div>
+
+      <div class="row" id="row-4">
+        <button type="button" onclick="clear_display()">Clear</button>
+        <button type="button" onclick="on_num_click('/')">/</button>
+        <button type="button" onclick="on_num_click('*')">*</button>
+        <button type="button" onclick="on_num_click('-')">-</button>
+        <button type="button" onclick="on_num_click('+')">+</button>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <p>Created By: Kyle Hinsey (khinsey)</p>
+    <script src="script.js"></script>
+  </body>
+</html>
